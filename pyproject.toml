@@ -1,0 +1,25 @@
+[project]
+name = "codeforge"
+version = "0.1.0"
+description = "أداة لإنشاء وإدارة المشاريع البرمجية"
+readme = "README.md"
+authors = [
+    {name = "مطور CodeForge", email = "you@example.com"}
+]
+requires-python = ">=3.8"
+dependencies = [
+    "jinja2>=3.1.0",
+    "click>=8.1.0",
+    "colorama>=0.4.0"
+]
+
+[project.scripts]
+codeforge = "codeforge.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# ⬇️ هذا هو التعديل المهم ⬇️
+[tool.setuptools]
+packages = ["codeforge"]
