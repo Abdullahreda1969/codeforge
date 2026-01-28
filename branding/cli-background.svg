@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <!-- خلفية بسيطة -->
+  <rect width="800" height="200" fill="#0f172a"/>
+  
+  <!-- نافذة طرفية مبسطة -->
+  <g transform="translate(100, 30)">
+    <!-- إطار النافذة -->
+    <rect width="600" height="140" rx="10" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    
+    <!-- شريط العنوان -->
+    <rect width="600" height="30" fill="#0f172a"/>
+    <circle cx="20" cy="15" r="6" fill="#ef4444"/>
+    <circle cx="45" cy="15" r="6" fill="#f59e0b"/>
+    <circle cx="70" cy="15" r="6" fill="#10b981"/>
+    
+    <!-- محاكاة CLI -->
+    <g font-family="'Courier New', monospace" font-size="16" fill="#e2e8f0">
+      <!-- أمر -->
+      <text x="30" y="70">
+        <tspan fill="#f59e0b">$</tspan>
+        <tspan x="50" fill="#ffffff"> codeforge create python myapp</tspan>
+      </text>
+      
+      <!-- نتيجة -->
+      <text x="30" y="100">
+        <tspan fill="#10b981">✓</tspan>
+        <tspan x="50"> Project </tspan>
+        <tspan fill="#3b82f6">myapp</tspan>
+        <tspan> created successfully!</tspan>
+      </text>
+      
+      <!-- تلميح -->
+      <text x="30" y="130">
+        <tspan fill="#f59e0b">➜</tspan>
+        <tspan x="50"> Type </tspan>
+        <tspan fill="#f59e0b" font-weight="bold">codeforge --help</tspan>
+        <tspan> for more commands</tspan>
+      </text>
+    </g>
+  </g>
+  
+  <!-- شعار CodeForge في الأسفل -->
+  <text x="400" y="190" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">
+    CodeForge CLI • Forge Your Code with Precision
+  </text>
+</svg>

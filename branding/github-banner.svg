@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
+  <defs>
+    <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    
+    <!-- نمط الشفرات -->
+    <pattern id="codePattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0,0 L20,20 M20,0 L0,20" stroke="#334155" stroke-width="0.5" opacity="0.2"/>
+    </pattern>
+  </defs>
+  
+  <!-- خلفية -->
+  <rect width="1280" height="320" fill="url(#bannerGrad)"/>
+  <rect width="1280" height="320" fill="url(#codePattern)"/>
+  
+  <!-- الشعار في المنتصف -->
+  <g transform="translate(640, 160)">
+    <!-- دائرة خلفية -->
+    <circle r="80" fill="#1e293b" opacity="0.3"/>
+    <circle r="78" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,5" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- المطرقة -->
+    <g>
+      <rect x="-4" y="-30" width="8" height="35" rx="2" fill="#cbd5e1"/>
+      <rect x="-25" y="-35" width="50" height="12" rx="4" fill="#f59e0b"/>
+      <rect x="-23" y="-33" width="46" height="5" rx="1" fill="#ffffff" opacity="0.6"/>
+    </g>
+  </g>
+  
+  <!-- النص -->
+  <g>
+    <!-- العنوان الرئيسي -->
+    <text x="640" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#f8fafc">
+      <tspan fill="#3b82f6">Code</tspan>
+      <tspan fill="#f59e0b">Forge</tspan>
+    </text>
+    
+    <!-- الشعار -->
+    <text x="640" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#94a3b8" font-style="italic">
+      Forge Your Projects with Precision
+    </text>
+    
+    <!-- الإصدار -->
+    <text x="640" y="310" text-anchor="middle" font-family="monospace" font-size="18" fill="#64748b">
+      v0.1.0 | Python | CLI Tool | Open Source
+    </text>
+  </g>
+  
+  <!-- زوايا زخرفية -->
+  <path d="M50,50 L80,20 L100,20 L70,50 Z" fill="#f59e0b" opacity="0.5"/>
+  <path d="M1230,270 L1260,300 L1240,300 L1210,270 Z" fill="#3b82f6" opacity="0.5"/>
+</svg>

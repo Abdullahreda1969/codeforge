@@ -1,0 +1,13 @@
+/* CodeForge Color Palette */
+:root {
+  --cf-blue: #2563eb;
+  --cf-orange: #f59e0b;
+  --cf-dark: #1e293b;
+  --cf-light: #f8fafc;
+  --cf-success: #10b981;
+  --cf-danger: #ef4444;
+}
+
+/* Usage */
+.primary { color: var(--cf-blue); }
+.secondary { color: var(--cf-orange); }
